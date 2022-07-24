@@ -1,0 +1,24 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+    
+    int arr[] = new int []{1,2,3,4,5};
+Stack <Integer> st = new Stack<Integer>();
+
+    Arrays.sort(arr);
+    int x = arr[0];
+    for(int i =0;i<arr.length;i++){
+        st.push(arr[i]);
+    }
+    for(int i =0;i<=st.size();i++){
+        System.out.println(st.size());
+        int p = st.pop();
+        if(p<x){
+            System.out.println("popping"+p+": min in the stack is"+ p+".popped"+ p);
+        }
+        else{
+            System.out.println("popping"+ p +": min in the stack is"+x+".popped"+ p);
+        }
+    }
+    }
+}
