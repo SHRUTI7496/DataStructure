@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	int arr[] = new int []{18, 30, 15, 70, 12};
+	int x=3;
+	int narr[]= new int[arr.length-1];
+	int n=narr.length;
+	for(int i=0,k=0;i<arr.length;i++){
+	    System.out.println(k);
+	    if(i==3){
+	        continue;
+	    }
+	    else{
+	    narr[k++]=arr[i];}
+	}
+	System.out.println(Arrays.toString(narr));
+	}
+}
