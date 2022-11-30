@@ -1,0 +1,47 @@
+
+import java.util.*;
+ class HelloWorld {
+ public  class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data = data;
+        this.next= null;
+    }
+}
+Node head=null;
+Node tail=null;
+public void addNodeAtEnd(int val){
+    Node newnode = new Node(val);
+    if(head== null){
+        tail= newnode;
+        head= newnode;
+    }
+    else{
+        tail.next=newnode;
+        newnode.next = null;
+        tail= newnode;
+    }}
+    
+    public void printelement(){
+        Node current = head;
+      while(current!=null){
+          System.out.println(current.data + " ");
+          
+          current= current.next;
+          
+      }  
+      System.out.println(" ");
+    }
+    
+
+    public static void main(String[] args) {
+        HelloWorld hello = new HelloWorld();
+       hello.addNodeAtEnd(12);
+        hello.addNodeAtEnd(2);
+         hello.addNodeAtEnd(22);
+          hello.addNodeAtEnd(11);
+           hello.addNodeAtEnd(15);
+           hello.printelement();
+    }
+}
