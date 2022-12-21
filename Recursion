@@ -1,0 +1,15 @@
+public class Main
+{	    static int [] arr = {5,4,6,12,76};
+	public static void main(String[] args) {
+
+		int i =sum(arr.length-1);
+		System.out.println(i);
+	}
+	public static int sum(int n){
+	    if(n==0){
+	    return arr[n];}
+	    else{
+	   return arr[n]+sum(n-1);}
+	    
+	}
+}
